@@ -31,3 +31,33 @@ fuel fee, but the same other fees.
 
 Southern Company pretends that this is something a regular customer should
 be able to make decisions about.
+
+
+How Do I Use It?
+================
+
+Log in to Georgia Power's web site.
+
+Visit "Billing and Payments" / "Usage" and download a month of *Hourly* usage
+data.
+
+https://customerservice2.southerncompany.com/Billing/MyPowerUsage
+
+and that will save a "xlsx" file on disk. Load that directly into this program
+
+	`go run ./cli.go ~/Downloads/GPC_Usage_2023-12-12-2024-01-11.xlsx`
+
+and you should see something like
+
+```
+from file GPC_Usage_2023-12-12-2024-01-11.xlsx
+             GP R-28: $64.60  Residential
+       GP TOU-PEV-12: $78.81  Time-of-Use Plug-in Electric Vehicle
+       GP TOU-REO-16: $74.63  Time-of-Use Residential Energy Only
+```
+
+
+Help
+====
+
+This is a work in progress. Bug reports welcome at github.
